@@ -70,7 +70,7 @@ select * from user4;
 CREATE TABLE `User5`(
 		`name` 		VARCHAR(10) NOT NULL,
         `gender` 	TINYINT,
-        `age` 		TINYINT DEFAULT 1,
+        `age` 		INT DEFAULT 1,
         `addr` 		VARCHAR(10)
 );
 
@@ -80,7 +80,7 @@ INSERT INTO `User5` SET `name` = '김춘추' , `addr` = '부산시';
 
 #실습 2-11
 ALTER TABLE `User5` ADD `hp` VARCHAR(20);
-ALTER TABLE `User5` MODIFY `age` CHAR(10) DEFAULT '0000-00-00' AFTER `name`;
+ALTER TABLE `User5` ADD `birth` CHAR(10) DEFAULT '0000-00-00' AFTER `name`;
 ALTER TABLE `User5` ADD `uid` VARCHAR(10) PRIMARY KEY FIRST;
 
 drop table `User5`;
