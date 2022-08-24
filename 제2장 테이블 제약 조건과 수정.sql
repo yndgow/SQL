@@ -81,7 +81,7 @@ INSERT INTO `User5` SET `name` = '김춘추' , `addr` = '부산시';
 #실습 2-11
 ALTER TABLE `User5` ADD `hp` VARCHAR(20);
 ALTER TABLE `User5` ADD `birth` CHAR(10) DEFAULT '0000-00-00' AFTER `name`;
-ALTER TABLE `User5` ADD `uid` VARCHAR(10) PRIMARY KEY FIRST;
+ALTER TABLE `User5` ADD `uid` VARCHAR(10) FIRST;
 
 drop table `User5`;
 
